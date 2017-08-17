@@ -20,5 +20,6 @@ setup(name='lineman',
               'lineman = lineman.__main__:cli_run',
           ],
       },
-      install_requires=['cappy', 'docopt', 'pyyaml', 'python-dateutil'],
+      install_requires=['cappy==1.1.1', 'docopt', 'pyyaml', 'python-dateutil'],
+      dependency_links=["git+https://github.com/ctsit/cappy@1.1.1#egg=cappy-1.1.1"],
       zip_safe=False)
